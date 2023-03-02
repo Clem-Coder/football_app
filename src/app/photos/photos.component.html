@@ -1,0 +1,17 @@
+<form (ngSubmit)="uploadPhotos()">
+    <div class="file_container">
+        <input type="file" accept="image/*" multiple (change)="getImagePreview($event)">
+    </div>
+    <div class="preview" *ngIf="imgPreview">
+       <div *ngFor="let image of imgPreview | slice:0:5; let i=index" class="box"> 
+            <button mat-mini-fab color="primary" aria-label="Example icon button with a delete icon" (click)="deletePhoto(i)">
+                <mat-icon>delete</mat-icon>
+            </button>
+            <img src='{{image}}' alt=""> 
+       </div>
+       <h1 *ngIf="imgPreview.length > 5" > ... </h1>  
+    </div>
+    
+    <button mat-stroked-button *ngIf="images.length > 0" id="uploadButoon" type="submit"> Publier </button>    
+</form>
+

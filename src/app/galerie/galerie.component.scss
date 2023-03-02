@@ -1,0 +1,19 @@
+
+.box{
+    display: flex;
+
+    align-items: center;
+    flex-wrap: wrap; 
+   
+}
+
+
+
+img { 
+    margin: 2%;
+    border: 2px solid black;
+    border-radius: 3%;
+    object-fit: cover;
+    width: 130px;
+    height: 130px;
+}

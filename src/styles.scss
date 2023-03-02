@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    background-image: url('./assets/images/background-transformed.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    margin: 0;
+
+}
+
+
+.center-block{
+    width: 60%;
+    margin: auto;
+}
+
+.white-block{
+    position: absolute;
+    padding: 2%;
+    width: 60%;
+    
+    min-height: 80ch;
+    box-sizing: border-box;
+    border: 2px solid rgb(2, 160, 231);
+    background-color: white;
+}
+
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

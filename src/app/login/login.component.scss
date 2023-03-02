@@ -1,0 +1,22 @@
+
+*{
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: auto
+}
+
+
+//input outline color
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: black!important;
+    // opacity: 1!important;
+}
+
+// mat-label normal state style
+::ng-deep .mat-form-field-label {
+    color: black!important;
+    // color: $mainColor!important;
+}
